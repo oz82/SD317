@@ -1,0 +1,3 @@
+public enum MyColor {
+    RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE, PINK, BROWN, GRAY, BLACK, WHITE
+}
