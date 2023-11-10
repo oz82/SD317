@@ -1,0 +1,31 @@
+Aşağıda verilen egzersizleri ayrı projeler yapabileceğiniz gibi tek projede ayrı paketler (package) halinde de organize edebilirsiniz.
+
+    Basit Sınıf ve Nesne Oluşturma:
+        Bir Araba sınıfı oluşturun. Özellikler olarak marka, model, yıl ve renk gibi alanlar ekleyin.
+        Bu sınıf için birkaç farklı araba nesnesi oluşturun ve her birinin özelliklerini yazdırın.
+
+    Kalıtım (Inheritance) Kullanımı:
+        Hayvan adında bir üst sınıf oluşturun ve yemekYe, uyu gibi genel metotlar ekleyin.
+        Kedi ve Kopek gibi alt sınıflar oluşturun ve özel davranışlar ekleyin (örneğin, miyavla veya havla).
+	Örnek: miyavla metodunun içinde sadece System.out.println("miyav"); komutu olabilir.
+
+    Polimorfizm Uygulaması:
+        Bir Sekil sınıfı oluşturun ve altında Daire, Kare, Ucgen gibi sınıflar oluşturarak alanHesapla metodunu her biri için farklı şekilde uygulayın.
+	Daha sonra Sekil sınıfını bir veri tipi olarak kullanıp alt sınıflardan türetilen nesneleri bu veri tipindeki referanslara bağlayın ve referanslarla alanHesapla metodunu çağırın.
+	Şöyle: 
+		Sekil sekil1 = new Daire();
+		Sekil sekil1 = new Kare();
+
+    Arayüz (Interface) Kullanımı:
+        Calisabilir adında bir arayüz oluşturun ve içine calis metodunu ekleyin.
+        Robot, Isci gibi sınıflar oluşturarak bu arayüzü uygulayın ve her biri için calis metodunu özelleştirin.
+
+    Kapsülleme (Encapsulation) ve Getter/Setter Metotları:
+        Ogrenci sınıfı oluşturun ve özelliklerini (ad, soyad, numara) özel yapın (private).
+        Her özellik için getter ve setter metotları ekleyin.
+
+    Kompozisyon (Composition) Kullanımı:
+        Kitaplik ve Kitap sınıflarını oluşturun. Her Kitaplik nesnesinin birden fazla Kitap nesnesini içermesini sağlayın.
+
+
+Not: Egzersizlerin her biri için kendi Test sınıflarını yazın ve bu sınıflar içinde yazdığınız kodların çalışıp çalışmadığını deneyin.
