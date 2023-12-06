@@ -1,6 +1,5 @@
 package list;
-
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -85,22 +84,13 @@ public class MyLinkedList<T> implements Iterable<T> {
         size++;
     }
 
-    public void addAll(List<T> list) {
-        size += list.size();
-        Node[] nodes = new Node[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            nodes[i] = new Node(list.get(i));
+    public void addAll(Collection<? extends T> c) {
+        for (T element : c) {
+            add(element);
         }
-        for (int i = 0; i < list.size(); i++) {
-            if (i > 0) {
-                nodes[i - 1].setNext(nodes[i]);
-            }
-        }
-        head = nodes[0];
-        tail = nodes[nodes.length - 1];
     }
 
-    public void addAll(MyLinkedList<T> list) {
+    public void merge(MyLinkedList<T> list) {
         if (this.head == null) {
             this.head = list.head;
             this.tail = list.tail;
