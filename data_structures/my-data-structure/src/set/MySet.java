@@ -39,6 +39,25 @@ public class MySet<T> implements Iterable<T> {
         return elements.iterator();
     }
 
+    public MySet union(MySet set) {
+        MySet result = new MySet();
+        for (Object element : set.elements) {
+            result.add(element);
+        }
+        for (Object element : this.elements) {
+            result.add(element);
+        }
+        return result;
+    }
+
+    public MySet intersection(MySet set) {
+        MySet result = new MySet();
+        for (Object element : this.elements) {
+            if (set.contains(element)) result.add(element);
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         MySet<String> mySet = new MySet<>();
         mySet.add("Java");
