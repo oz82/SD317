@@ -1,0 +1,7 @@
+aslı	2000	afyon
+rabia	2001	izmir
+ömer	2002	antalya
+sinan	2001	antalya
+bilgehan	2002	afyon
+samet	2001	şırnak
+mert	2003	ankara
